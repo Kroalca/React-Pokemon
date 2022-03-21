@@ -9,3 +9,33 @@ header{
   align-items: center;
   background-color: darkgoldenrod;
 }
+
+.pokemons{
+  padding: 5rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-rows: 22rem;
+  grid-gap: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.PokemonName{
+  text-transform: capitalize;
+}
+
+.showPokemon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 3rem;
+}
+
+.center{
+  margin-bottom: 2rem;
+}
+
+.center nav{
+  display: flex !important;
+  justify-content: center;
+}
