@@ -39,7 +39,7 @@ function Profile () {
 ```
 ### React Router Dom
 ####Instalacion
-´´´
+```
 npm install react-router-dom@6
-´´´
+```
 
