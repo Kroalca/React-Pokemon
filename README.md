@@ -37,3 +37,9 @@ function Profile () {
   return <div>hello {data.name}!</div>
 }
 ```
+### React Router Dom
+####Instalacion
+´´´
+npm install react-router-dom@6
+´´´
+
