@@ -25,8 +25,8 @@ function AllPokemons() : JSX.Element {
             <div className="pokemons">
                 {data?.results.map((poke : PokemonUrl , index : number) => {
                     return (
-                        <div className="my-5">
-                            <CardPokemon key={index} url={poke.url} name={poke.name}/>
+                        <div className="my-5" key={index}>
+                            <CardPokemon url={poke.url} name={poke.name}/>
                         </div>
                     );
                 })}

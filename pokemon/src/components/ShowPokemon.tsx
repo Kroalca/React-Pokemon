@@ -2,6 +2,7 @@ import React from 'react';
 import useSWR from "swr"
 import { fetcher } from '../service/fetcher';
 import { useParams } from "react-router-dom";
+import { SlotType} from '../interface/Pokemon';
 
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
@@ -23,8 +24,8 @@ function ShowPokemon() : JSX.Element {
                             <img className="card-img" src={data.sprites.front_default} alt={data.name} />
                             <div className="d-flex justify-content-center">
                                 <Stack direction="row" spacing={1} className="p-3">
-                                    {data.types.map((element : any) => {
-                                        return <Chip className='text-capitalize' key={element.type.name} label={element.type.name} variant="outlined" />
+                                    {data.types.map((element : SlotType,index : number) => {
+                                        return <Chip className='text-capitalize' key={index} label={element.type.name} variant="outlined" />
                                     })}
                                 </Stack>
                             </div>
