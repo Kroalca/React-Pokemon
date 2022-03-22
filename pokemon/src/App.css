@@ -4,10 +4,18 @@
   box-sizing: border-box;
 }
 header{
-  height: 35vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 55vh;
   display: flex;
   align-items: center;
   background-color: darkgoldenrod;
+  background-image: url("./resources/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .pokemons{
@@ -15,7 +23,7 @@ header{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   grid-auto-rows: 22rem;
-  grid-gap: 3rem;
+  grid-gap: 5rem;
   align-items: center;
   justify-items: center;
 }
@@ -38,4 +46,18 @@ header{
 .center nav{
   display: flex !important;
   justify-content: center;
+}
+
+header img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.card-body .card-title{
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }

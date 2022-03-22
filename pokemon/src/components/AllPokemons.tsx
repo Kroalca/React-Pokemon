@@ -16,7 +16,7 @@ function AllPokemons() : JSX.Element {
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>
 
-    const handleChange = (event : any ,value : Number) => {
+    const handleChange = (event : React.ChangeEvent<unknown> ,value : Number) => {
         navigate(`/${value}`);
     };
 
@@ -25,7 +25,9 @@ function AllPokemons() : JSX.Element {
             <div className="pokemons">
                 {data?.results.map((poke : PokemonUrl , index : number) => {
                     return (
-                        <CardPokemon key={index} url={poke.url} name={poke.name} />
+                        <div className="my-5">
+                            <CardPokemon key={index} url={poke.url} name={poke.name}/>
+                        </div>
                     );
                 })}
             </div>

@@ -8,8 +8,8 @@ import './App.css';
 function App() : JSX.Element {
   return (
     <React.Fragment>
-      <Header/>
       <BrowserRouter>
+      <Header/>
         <Routes>
           <Route path='/:page' element={<AllPokemons/>}/>
           <Route path='/pokemon/:id' element={<ShowPokemon/>}/>

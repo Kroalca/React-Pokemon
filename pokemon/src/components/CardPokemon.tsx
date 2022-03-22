@@ -28,7 +28,6 @@ function CardPokemon(props : PokemonUrl) : JSX.Element {
                 <CardActionArea>
                     <CardMedia
                     component="img"
-                    height="220"
                     image={data.sprites.front_default}
                     alt={props.name}
                     />
@@ -37,8 +36,7 @@ function CardPokemon(props : PokemonUrl) : JSX.Element {
                         {props.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptas!
                     </Typography>
                     </CardContent>
                 </CardActionArea>
