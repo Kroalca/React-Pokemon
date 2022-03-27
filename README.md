@@ -42,4 +42,19 @@ function Profile () {
 ```
 npm install react-router-dom@6
 ```
-
+###Visual code
+```
+'Fira Code', monospace
+```
+```
+{
+    "editor.fontSize": 20,
+    "workbench.iconTheme": "material-icon-theme",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": -1,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code', monospace",
+}
+```
